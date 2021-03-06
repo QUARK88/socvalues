@@ -190,7 +190,7 @@ stats"></a></div></noscript>
 
     plan = getQueryVariable("plan")
     vang = getQueryVariable("vang")
-    auto = getQueryVariable("auto")
+    envi = getQueryVariable("envi")
     auth = getQueryVariable("auth")
     envi = getQueryVariable("envi")
     land = getQueryVariable("land")
@@ -204,7 +204,7 @@ stats"></a></div></noscript>
     disu = getQueryVariable("disu")
     mark = (100 - plan).toFixed(1)
     unio = (100 - vang).toFixed(1)
-    demo = (100 - auto).toFixed(1)
+    demo = (100 - envi).toFixed(1)
     libe = (100 - auth).toFixed(1)
     prod = (100 - envi).toFixed(1)
     geor = (100 - land).toFixed(1)
@@ -221,7 +221,7 @@ stats"></a></div></noscript>
     setBarValue("mark", mark)
     setBarValue("vang", vang)
     setBarValue("unio", unio)
-    setBarValue("auto", auto)
+    setBarValue("envi", auto)
     setBarValue("demo", demo)
     setBarValue("auth", auth)
     setBarValue("libe", libe)
@@ -248,8 +248,8 @@ stats"></a></div></noscript>
 
     document.getElementById("becon").innerHTML = setLabel(plan, beconArray)
     document.getElementById("blead").innerHTML = setLabel(vang, bleadArray)
-    document.getElementById("bindu").innerHTML = setLabel(auto, binduArray)
-    document.getElementById("bscie").innerHTML = setLabel(auth, bscieArray)
+    document.getElementById("bindu").innerHTML = setLabel(envi, binduArray)
+    document.getElementById("bscie").innerHTML = setLabel(envi, bscieArray)
     document.getElementById("bstat").innerHTML = setLabel(envi, bstatArray)
     document.getElementById("bsoci").innerHTML = setLabel(land, bsociArray)
     document.getElementById("brevi").innerHTML = setLabel(anti, breviArray)
@@ -267,7 +267,7 @@ stats"></a></div></noscript>
         dist = 0
         dist += Math.abs(ideologies[i].stats.becon - plan)*1
         dist += Math.abs(ideologies[i].stats.blead - vang)*1
-        dist += Math.abs(ideologies[i].stats.bindu - auto)*1
+        dist += Math.abs(ideologies[i].stats.bindu - envi)*1
         dist += Math.abs(ideologies[i].stats.bscie - auth)*1
         dist += Math.abs(ideologies[i].stats.bstat - envi)*1
         dist += Math.abs(ideologies[i].stats.bsoci - land)*1
