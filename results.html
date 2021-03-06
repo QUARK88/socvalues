@@ -188,8 +188,8 @@ stats"></a></div></noscript>
         	{return ""}
     }
 
-    free = getQueryVariable("free")
-    futu = getQueryVariable("futu")
+    plan = getQueryVariable("plan")
+    vang = getQueryVariable("vang")
     auto = getQueryVariable("auto")
     auth = getQueryVariable("auth")
     envi = getQueryVariable("envi")
@@ -202,8 +202,8 @@ stats"></a></div></noscript>
     disu = getQueryVariable("disu")
     elit = getQueryVariable("elit")
     disu = getQueryVariable("disu")
-    corp = (100 - free).toFixed(1)
-    cons = (100 - futu).toFixed(1)
+    mark = (100 - plan).toFixed(1)
+    unio = (100 - vang).toFixed(1)
     demo = (100 - auto).toFixed(1)
     libe = (100 - auth).toFixed(1)
     prod = (100 - envi).toFixed(1)
@@ -217,10 +217,10 @@ stats"></a></div></noscript>
     popu = (100 - elit).toFixed(1)
     righ = (100 - disu).toFixed(1)
 
-    setBarValue("free", free)
-    setBarValue("corp", corp)
-    setBarValue("futu", futu)
-    setBarValue("cons", cons)
+    setBarValue("plan", plan)
+    setBarValue("mark", mark)
+    setBarValue("vang", vang)
+    setBarValue("unio", unio)
     setBarValue("auto", auto)
     setBarValue("demo", demo)
     setBarValue("auth", auth)
@@ -246,8 +246,8 @@ stats"></a></div></noscript>
     setBarValue("disu", disu)
     setBarValue("righ", righ)
 
-    document.getElementById("becon").innerHTML = setLabel(free, beconArray)
-    document.getElementById("blead").innerHTML = setLabel(futu, bleadArray)
+    document.getElementById("becon").innerHTML = setLabel(plan, beconArray)
+    document.getElementById("blead").innerHTML = setLabel(vang, bleadArray)
     document.getElementById("bindu").innerHTML = setLabel(auto, binduArray)
     document.getElementById("bscie").innerHTML = setLabel(auth, bscieArray)
     document.getElementById("bstat").innerHTML = setLabel(envi, bstatArray)
@@ -265,8 +265,8 @@ stats"></a></div></noscript>
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.abs(ideologies[i].stats.becon - free)*1
-        dist += Math.abs(ideologies[i].stats.blead - futu)*1
+        dist += Math.abs(ideologies[i].stats.becon - plan)*1
+        dist += Math.abs(ideologies[i].stats.blead - vang)*1
         dist += Math.abs(ideologies[i].stats.bindu - auto)*1
         dist += Math.abs(ideologies[i].stats.bscie - auth)*1
         dist += Math.abs(ideologies[i].stats.bstat - envi)*1
