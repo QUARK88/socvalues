@@ -17,7 +17,7 @@ questions = [
             "binte": 0,
             "belit": 0
         }
-    }
+    },
     {
         "question": ".",
         "effect": {
@@ -36,5 +36,5 @@ questions = [
             "binte": 0,
             "belit": 0
         }
-    },
+    }
 ];
