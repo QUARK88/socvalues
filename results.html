@@ -161,20 +161,20 @@ stats"></a></div></noscript>
         }
     }
 
-    beconArray = ["","","","","","",""]
-    bleadArray = ["","","","","","",""]
-    binduArray = ["","","","","","",""]
-    bscieArray = ["","","","","","",""]
-    bstatArray = ["","","","","","",""]
-    bsociArray = ["","","","","","",""]
-    breviArray = ["","","","","","",""]
-    bnatiArray = ["","","","","","",""]
-    btradArray = ["","","","","","",""]
-    bimplArray = ["","","","","","",""]
-    bpoliArray = ["","","","","","",""]
-    barmyArray = ["","","","","","",""]
-    binteArray = ["","","","","","",""]
-    belitArray = ["","","","","","",""]
+    beconArray = ["Planned","Directed","Regulated","Neutral","Permissive","Free Market","Laissez Faire"]
+    bleadArray = ["Personality Cult","Vanguard","Party","Neutral","Decentralised","Unions","Syndicalist"]
+    binduArray = ["Ecologic","Environmental","Sustainable","Neutral","Productive","Industrial","Unconcerned"]
+    bscieArray = ["Transhumanist","Accelerationist","Innovative","Neutral","Exnovative","Decelerationist","Primitivist"]
+    bstatArray = ["Totalitarian","Authoritarian","Statist","Neutral","Liberal","Libertarian","Anarchist"]
+    bsociArray = ["Noveltist","Revolutionary","Progressive","Neutral","Conservative","Traditionalist","Reactionary"]
+    breviArray = ["Marxist","Historical Materialist","Inspired","Neutral","Different","Independent","Anti Marxist"]
+    bnatiArray = ["Globalist","Internationalist","Diplomatic","Neutral","Patriotic","Nationalist","Chauvinist"]
+    btradArray = ["Global Economy","Free Trade","Low Tariffs","Neutral","High Tariffs","Protectionist","Autarky"]
+    bimplArray = ["Massacre","Revolution","Coup","Neutral","Riots","Manifestation","Reform"]
+    bpoliArray = ["Absolutist","Autocratic","Oligarchic","Neutral","Representative","Proportional","Direct Democratic"]
+    barmyArray = ["Stockpile","Militarist","Armed","Neutral","Limited","Minimal","Pacific"]
+    binteArray = ["World Domination","Imperialist","Interventionist","Neutral","Non Interventionist","Isolationist","Defensive"]
+    belitArray = ["Disconnected","Elitist","Establishment","Neutral","Appealing","Popular","Populist"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -191,75 +191,75 @@ stats"></a></div></noscript>
     plan = getQueryVariable("plan")
     vang = getQueryVariable("vang")
     envi = getQueryVariable("envi")
-    auth = getQueryVariable("auth")
-    envi = getQueryVariable("envi")
-    land = getQueryVariable("land")
-    anti = getQueryVariable("anti")
-    glob = getQueryVariable("glob")
+    tran = getQueryVariable("tran")
+    stat = getQueryVariable("stat")
+    prog = getQueryVariable("prog")
+    marx = getQueryVariable("marx")
+    intr = getQueryVariable("intr")
+    free = getQueryVariable("free")
+    revo = getQueryVariable("revo")
+    auto = getQueryVariable("auto")
+    mili = getQueryVariable("mili")
     inte = getQueryVariable("inte")
-    acce = getQueryVariable("acce")
     elit = getQueryVariable("elit")
-    disu = getQueryVariable("disu")
-    elit = getQueryVariable("elit")
-    disu = getQueryVariable("disu")
     mark = (100 - plan).toFixed(1)
     unio = (100 - vang).toFixed(1)
-    demo = (100 - envi).toFixed(1)
-    libe = (100 - auth).toFixed(1)
-    prod = (100 - envi).toFixed(1)
-    geor = (100 - land).toFixed(1)
-    reli = (100 - anti).toFixed(1)
-    nati = (100 - glob).toFixed(1)
+    indu = (100 - envi).toFixed(1)
+    agra = (100 - tran).toFixed(1)
+    libe = (100 - stat).toFixed(1)
+    trad = (100 - prog).toFixed(1)
+    revi = (100 - marx).toFixed(1)
+    nati = (100 - intr).toFixed(1)
+    prot = (100 - free).toFixed(1)
+    refo = (100 - revo).toFixed(1)
+    demo = (100 - auto).toFixed(1)
+    peac = (100 - mili).toFixed(1)
     isol = (100 - inte).toFixed(1)
-    dece = (100 - acce).toFixed(1)
     popu = (100 - elit).toFixed(1)
-    righ = (100 - disu).toFixed(1)
-    popu = (100 - elit).toFixed(1)
-    righ = (100 - disu).toFixed(1)
 
     setBarValue("plan", plan)
     setBarValue("mark", mark)
     setBarValue("vang", vang)
     setBarValue("unio", unio)
-    setBarValue("envi", auto)
-    setBarValue("demo", demo)
-    setBarValue("auth", auth)
-    setBarValue("libe", libe)
     setBarValue("envi", envi)
-    setBarValue("prod", prod)
-    setBarValue("land", land)
-    setBarValue("geor", geor)
-    setBarValue("anti", anti)
-    setBarValue("reli", reli)
-    setBarValue("glob", glob)
+    setBarValue("indu", indu)
+    setBarValue("tran", tran)
+    setBarValue("agra", agra)
+    setBarValue("stat", stat)
+    setBarValue("libe", libe)
+    setBarValue("prog", prog)
+    setBarValue("trad", trad)
+    setBarValue("marx", marx)
+    setBarValue("revi", revi)
+    setBarValue("intr", intr)
     setBarValue("nati", nati)
+    setBarValue("free", free)
+    setBarValue("prot", prot)
+    setBarValue("revo", revo)
+    setBarValue("refo", refo)
+    setBarValue("auto", auto)
+    setBarValue("demo", demo)
+    setBarValue("mili", mili)
+    setBarValue("peac", peac)
     setBarValue("inte", inte)
     setBarValue("isol", isol)
-    setBarValue("acce", acce)
-    setBarValue("dece", dece)
     setBarValue("elit", elit)
     setBarValue("popu", popu)
-    setBarValue("disu", disu)
-    setBarValue("righ", righ)
-    setBarValue("elit", elit)
-    setBarValue("popu", popu)
-    setBarValue("disu", disu)
-    setBarValue("righ", righ)
 
     document.getElementById("becon").innerHTML = setLabel(plan, beconArray)
     document.getElementById("blead").innerHTML = setLabel(vang, bleadArray)
     document.getElementById("bindu").innerHTML = setLabel(envi, binduArray)
-    document.getElementById("bscie").innerHTML = setLabel(envi, bscieArray)
-    document.getElementById("bstat").innerHTML = setLabel(envi, bstatArray)
-    document.getElementById("bsoci").innerHTML = setLabel(land, bsociArray)
-    document.getElementById("brevi").innerHTML = setLabel(anti, breviArray)
-    document.getElementById("bnati").innerHTML = setLabel(glob, bnatiArray)
-    document.getElementById("btrad").innerHTML = setLabel(inte, btradArray)
-    document.getElementById("bimpl").innerHTML = setLabel(acce, bimplArray)
-    document.getElementById("bpoli").innerHTML = setLabel(elit, bpoliArray)
-    document.getElementById("barmy").innerHTML = setLabel(disu, barmyArray)
-    document.getElementById("binte").innerHTML = setLabel(elit, binteArray)
-    document.getElementById("belit").innerHTML = setLabel(disu, belitArray)
+    document.getElementById("bscie").innerHTML = setLabel(tran, bscieArray)
+    document.getElementById("bstat").innerHTML = setLabel(stat, bstatArray)
+    document.getElementById("bsoci").innerHTML = setLabel(prog, bsociArray)
+    document.getElementById("brevi").innerHTML = setLabel(marx, breviArray)
+    document.getElementById("bnati").innerHTML = setLabel(intr, bnatiArray)
+    document.getElementById("btrad").innerHTML = setLabel(free, btradArray)
+    document.getElementById("bimpl").innerHTML = setLabel(revo, bimplArray)
+    document.getElementById("bpoli").innerHTML = setLabel(auto, bpoliArray)
+    document.getElementById("barmy").innerHTML = setLabel(mili, barmyArray)
+    document.getElementById("binte").innerHTML = setLabel(inte, binteArray)
+    document.getElementById("belit").innerHTML = setLabel(elit, belitArray)
 
     ideology = ""
     ideodist = Infinity
@@ -268,17 +268,17 @@ stats"></a></div></noscript>
         dist += Math.abs(ideologies[i].stats.becon - plan)*1
         dist += Math.abs(ideologies[i].stats.blead - vang)*1
         dist += Math.abs(ideologies[i].stats.bindu - envi)*1
-        dist += Math.abs(ideologies[i].stats.bscie - auth)*1
-        dist += Math.abs(ideologies[i].stats.bstat - envi)*1
-        dist += Math.abs(ideologies[i].stats.bsoci - land)*1
-        dist += Math.abs(ideologies[i].stats.brevi - anti)*1
-        dist += Math.abs(ideologies[i].stats.bnati - glob)*1
-        dist += Math.abs(ideologies[i].stats.btrad - inte)*1
-        dist += Math.abs(ideologies[i].stats.bimpl - acce)*1
-        dist += Math.abs(ideologies[i].stats.bpoli - elit)*1
-        dist += Math.abs(ideologies[i].stats.barmy - disu)*1
-        dist += Math.abs(ideologies[i].stats.binte - elit)*1
-        dist += Math.abs(ideologies[i].stats.belit - disu)*1
+        dist += Math.abs(ideologies[i].stats.bscie - tran)*1
+        dist += Math.abs(ideologies[i].stats.bstat - stat)*1
+        dist += Math.abs(ideologies[i].stats.bsoci - prog)*1
+        dist += Math.abs(ideologies[i].stats.brevi - marx)*1
+        dist += Math.abs(ideologies[i].stats.bnati - intr)*1
+        dist += Math.abs(ideologies[i].stats.btrad - free)*1
+        dist += Math.abs(ideologies[i].stats.bimpl - revo)*1
+        dist += Math.abs(ideologies[i].stats.bpoli - auto)*1
+        dist += Math.abs(ideologies[i].stats.barmy - mili)*1
+        dist += Math.abs(ideologies[i].stats.binte - inte)*1
+        dist += Math.abs(ideologies[i].stats.belit - elit)*1
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
