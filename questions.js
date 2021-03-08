@@ -454,6 +454,5 @@ questions = [
             "binte": 0,
             "belit": 0
         }
-    },
-
+    }
 ];
