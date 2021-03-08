@@ -150,5 +150,24 @@ ideologies = [
             "binte": 0,
             "belit": 100
         }
+    },
+    {
+        "name": "Nullism",
+        "stats": {
+            "becon": 100,
+            "blead": 100,
+            "bindu": 0,
+            "bscie": 100,
+            "bstat": 100,
+            "bsoci": 100,
+            "brevi": 0,
+            "bnati": 0,
+            "btrad": 0,
+            "bimpl": 100,
+            "bpoli": 100,
+            "barmy": 100,
+            "binte": 100,
+            "belit": 100
+        }
     }
 ];
