@@ -302,5 +302,158 @@ questions = [
             "binte": 0,
             "belit": 0
         }
-    }
+    },
+    {
+        "question": "Leninism is the best way to structure Socialism.",
+        "effect": {
+            "becon": 0,
+            "blead": 10,
+            "bindu": 0,
+            "bscie": 0,
+            "bstat": 0,
+            "bsoci": 0,
+            "brevi": 0,
+            "bnati": 0,
+            "btrad": 0,
+            "bimpl": 0,
+            "bpoli": 0,
+            "barmy": 0,
+            "binte": 0,
+            "belit": 0
+        }
+    },
+    {
+        "question": "A vanguard party should be lead the population towards Socialism.",
+        "effect": {
+            "becon": 0,
+            "blead": 10,
+            "bindu": 0,
+            "bscie": 0,
+            "bstat": 0,
+            "bsoci": 0,
+            "brevi": 0,
+            "bnati": 0,
+            "btrad": 0,
+            "bimpl": 0,
+            "bpoli": 0,
+            "barmy": 0,
+            "binte": 0,
+            "belit": 0
+        }
+    },
+    {
+        "question": "Syndicalism died out because Leninism was a much better way to structure Socialism.",
+        "effect": {
+            "becon": 0,
+            "blead": 10,
+            "bindu": 0,
+            "bscie": 0,
+            "bstat": 0,
+            "bsoci": 0,
+            "brevi": 0,
+            "bnati": 0,
+            "btrad": 0,
+            "bimpl": 0,
+            "bpoli": 0,
+            "barmy": 0,
+            "binte": 0,
+            "belit": 0
+        }
+    },
+    {
+        "question": "Workers themselves can't decide, they must be guided by a party.",
+        "effect": {
+            "becon": 0,
+            "blead": 10,
+            "bindu": 0,
+            "bscie": 0,
+            "bstat": 0,
+            "bsoci": 0,
+            "brevi": 0,
+            "bnati": 0,
+            "btrad": 0,
+            "bimpl": 0,
+            "bpoli": 0,
+            "barmy": 0,
+            "binte": 0,
+            "belit": 0
+        }
+    },
+    {
+        "question": "Trade unions should be the formation of all socialist movements.",
+        "effect": {
+            "becon": 0,
+            "blead": -10,
+            "bindu": 0,
+            "bscie": 0,
+            "bstat": 0,
+            "bsoci": 0,
+            "brevi": 0,
+            "bnati": 0,
+            "btrad": 0,
+            "bimpl": 0,
+            "bpoli": 0,
+            "barmy": 0,
+            "binte": 0,
+            "belit": 0
+        }
+    },
+    {
+        "question": "Since Socialist parties always gets outvoted by Capitalist parties, just shows how irrelevant party politics are.",
+        "effect": {
+            "becon": 0,
+            "blead": -10,
+            "bindu": 0,
+            "bscie": 0,
+            "bstat": 0,
+            "bsoci": 0,
+            "brevi": 0,
+            "bnati": 0,
+            "btrad": 0,
+            "bimpl": 0,
+            "bpoli": 0,
+            "barmy": 0,
+            "binte": 0,
+            "belit": 0
+        }
+    },
+    {
+        "question": "Syndicalism is preferable to Leninism.",
+        "effect": {
+            "becon": 0,
+            "blead": -10,
+            "bindu": 0,
+            "bscie": 0,
+            "bstat": 0,
+            "bsoci": 0,
+            "brevi": 0,
+            "bnati": 0,
+            "btrad": 0,
+            "bimpl": 0,
+            "bpoli": 0,
+            "barmy": 0,
+            "binte": 0,
+            "belit": 0
+        }
+    },
+    {
+        "question": "Party politics is outdated and we should find another way to organize Socialist movements.",
+        "effect": {
+            "becon": 0,
+            "blead": -10,
+            "bindu": 0,
+            "bscie": 0,
+            "bstat": 0,
+            "bsoci": 0,
+            "brevi": 0,
+            "bnati": 0,
+            "btrad": 0,
+            "bimpl": 0,
+            "bpoli": 0,
+            "barmy": 0,
+            "binte": 0,
+            "belit": 0
+        }
+    },
+
 ];
